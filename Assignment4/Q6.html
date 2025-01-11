@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Health Survey</title>
+</head>
+<body>
+    <h2>Health Survey Form</h2>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="1" required><br><br>
+
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="Male" required> Male
+        <input type="radio" name="gender" value="Female" required> Female<br><br>
+
+        <label for="height">Height (cm):</label>
+        <input type="number" id="height" name="height" required><br><br>
+
+        <label for="weight">Weight (kg):</label>
+        <input type="number" id="weight" name="weight" required><br><br>
+
+        <label>Lifestyle Questions:</label><br>
+        <input type="checkbox" name="lifestyle" value="Smoking"> Smoking<br>
+        <input type="checkbox" name="lifestyle" value="Alcohol"> Alcohol Consumption<br>
+        <input type="checkbox" name="lifestyle" value="Exercise"> Regular Exercise<br><br>
+
+        <label for="diet">Dietary Preference:</label>
+        <select id="diet" name="diet">
+            <option value="Vegetarian">Vegetarian</option>
+            <option value="Non-Vegetarian">Non-Vegetarian</option>
+            <option value="Vegan">Vegan</option>
+        </select><br><br>
+
+        <label for="activity">Activity Level:</label>
+        <select id="activity" name="activity">
+            <option value="Sedentary">Sedentary</option>
+            <option value="Moderate">Moderate</option>
+            <option value="Active">Active</option>
+        </select><br><br>
+
+        <label for="concerns">Optional Health Concerns:</label><br>
+        <textarea id="concerns" name="concerns"></textarea><br><br>
+
+        <button type="submit">Submit Survey</button>
+    </form>
+</body>
+</html>
